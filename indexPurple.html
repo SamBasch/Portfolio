@@ -25,12 +25,12 @@
     <!--Custom CSS-->
     <link href="/css/blogCard.css" rel="stylesheet" />
     <link href="/css/hovercard.css" rel="stylesheet" />
-    <link href="/css/siteCustom.css" rel="stylesheet" />
+    <link href="/css/sitePurple.css" rel="stylesheet" />
 </head>
 
 
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#mainNav">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
         <div class="container-xxl">
             <a class="navbar-brand" href="#"><img src="/img/dw_signature_white.png" height="50" /></a>
@@ -63,6 +63,15 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/indexFA.html">Blue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/indexOrange.html">Orange</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/indexPurple.html">Purple</a>
                     </li>
                 </ul>
             </div>
@@ -101,7 +110,7 @@
                 </div>
                 <div class="col-12 col-lg-8 mt-3 mt-lg-0">
                     <h1>I'm Sam Baschnagel, a full-stack web developer</h1>
-                    <p>My journey to becoming a full-stack developer began during my high school years. After taking courses online, I decided that coding (in one shape or form) was the path I wanted to pursue. With that mindset, I went to college to obtain an associate's degree in Computer Engineering Technologies. A few years after college, I decided that full-stack software development was my path, and I attended CoderFoundry's Bootcamp. Now I am a certified full-stack developer ready to work with a team and take on challenging and helpful software projects.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     <div class="row g-5">
                         <div class="col-12 col-lg-6">
                             <span>Name:</span>
@@ -124,8 +133,7 @@
         </section>
         <section id="Skills" class="section-page">
             <h1>What I use</h1>
-            <p>This section overviews the many languages and libraries I use to code full-stack web and software applications. 
-                Each section displays a language I use for my web development and describes how I use it regularly. (There will be more content and less repetition here after I acquire more practical experience with these languages.)</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <div class="row g-3 row-cols-1 row-cols-md-2 row-cols-lg-3 p-2">
                 <div class="col">
                     
@@ -156,14 +164,14 @@
                     
                     <i class="devicon-git-plain colored devicons"></i>
                     <i class="devicon-github-original colored devicons"></i>
-                    <p>I use Git and Github on a daily basis to publish websites and web applications to my repositories. All of my projects and their code are organized on Github for easy revision management. You can see examples of my work on my <a href="https://github.com/SamBasch">Github</a> or in in my <a href="#Projects" class="linkstyle">projects</a> section.</p>
+                    <p>I use Git and Github on a daily basis to publish websites and web applications. All of my projects and their code are organized on Github for easy revision management. You can see examples of my work on Github in my <a href="#Projects" class="linkstyle">projects</a> section.</p>
 
           
                 </div>
                 <div class="col">
                     
                 <i class="devicon-postgresql-plain colored devicons"></i>
-                <p>I use SQL on a daily basis to create and manage databases (more info coming soon). You can see examples of my work implementing SQL in my <a href="#Projects" class="linkstyle">projects</a> section.</p>
+                <p>I use SQL on a daily basis to build websites and web applications. You can see examples of my work implementing SQL in my <a href="#Projects" class="linkstyle">projects</a> section.</p>
 
                 </div>
             </div>
@@ -250,7 +258,7 @@
                                 <p>
                                     An app that displays a random number between 1 and 100.
                                 </p>
-                                <button type="button" class="btn btn-primary">Learn More</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bugTrackerModal">Learn More</button>
                             </div>
                         </div>
                     </div>
@@ -267,7 +275,7 @@
                                 <p>
                                     An app that checks to see if a word is a palindrome.
                                 </p>
-                                <button type="button" class="btn btn-primary" >Learn More</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#moneyGrowModal" >Learn More</button>
                             </div>
                         </div>
                     </div>
@@ -285,7 +293,7 @@
                                 <p>
                                    An app to assist you in calculating your home mortgage.
                                 </p>
-                                <button type="button" class="btn btn-primary">Learn More</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#blogModal">Learn More</button>
                             </div>
                         </div>
                     </div>
@@ -303,7 +311,7 @@
                                 <p>
                                    An event planning app.
                                 </p>
-                                <button type="button" class="btn btn-primary">Learn More</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#blogModal">Learn More</button>
                             </div>
                         </div>
                     </div>
@@ -321,7 +329,7 @@
                                 <p>
                                    A classic coding interview exercise and demonstration.
                                 </p>
-                                <button type="button" class="btn btn-primary">Learn More</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#blogModal">Learn More</button>
                             </div>
                         </div>
                     </div>
@@ -339,7 +347,7 @@
                                 <p>
                                    An app that will take a word and reverse it.
                                 </p>
-                                <button type="button" class="btn btn-primary">Learn More</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#blogModal">Learn More</button>
                             </div>
                         </div>
                     </div>
@@ -352,7 +360,138 @@
                <span class="px-3">Like what you see? <a href="#Contact">Contact Me Now</a></span>
                <a href="#Contact" class="cta-arrow"><i class="bi bi-arrow-left-square-fill"></i></a>
         </section>
-        <section id="Blog" class="section-page"></section>
+        <section id="Blog" class="section-page">
+            <h1>Stuff I Write About</h1>
+            <p>I try to write on my blog on a regular basis. I think it is important to share your knowledge with others. </p>
+            <!--blog cards-->
+            <div class="d-flex flex-column align-items-center align-items-md-start" id="blogs">
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img class="blog-image" src="/img/Blog_FlyingGirl.jpg" />
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">JANUARY</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
+                                <p class="card-text line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 1 day ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img class="blog-image" src="/img/Blog_FlyingGirl.jpg" />
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">JANUARY</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
+                                <p class="card-text line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 1 day ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img class="blog-image" src="/img/Blog_FlyingGirl.jpg" />
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">JANUARY</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
+                                <p class="card-text line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 1 day ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img class="blog-image" src="/img/Blog_FlyingGirl.jpg" />
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">JANUARY</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
+                                <p class="card-text line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 1 day ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-article mb-4 card">
+                    <div class="row g-0 blog-row">
+                        <div class="col-md-4 blog-header">
+                            <a class="blog-image-link" href="#">
+                                <img class="blog-image" src="/img/Blog_FlyingGirl.jpg" />
+                            </a>
+                            <div class="blog-date">
+                                <div class="blog-day">11</div>
+                                <div class="blog-month">JANUARY</div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body h-100 d-flex flex-column justify-content-around">
+                                <h2 class="card-title">MAKE SQL QUERIES FLY</h2>
+                                <p class="card-text line-clamp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                <div class="text-start">
+                                    <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                                </div>
+                                <p class="card-text">
+                                    <small class="text-muted">Published 1 day ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
         <section id="Contact" class="section-page">
             <h1>Let's Chat</h1>
             <div class="border border-1 border-info shadow-lg bg-light p-2">
@@ -463,7 +602,10 @@
 <!--Bug tracker modal-->
 
 <!-- Button trigger modal -->
-
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bugTrackerModal">
+    Launch demo modal
+  </button>
+  
   <!-- Modal -->
   <div class="modal fade" id="bugTrackerModal" tabindex="-1" aria-labelledby="bugTrackerModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-center modal-xl modal-fullscreen-md-down">
@@ -513,13 +655,13 @@
                         <h3>Bug Tracker</h3>
                         <div>
                             <p>
-                                (coming soon)
+                                Lorum Ipsum
                             </p>
                             <p>
-                                (coming soon)
+                                Lorum Ipsum
                             </p>
                             <p>
-                                (coming soon)
+                                Lorum Ipsum
                             </p>
                         </div>
                         <ul class="list-group">
@@ -603,13 +745,13 @@
                         <h3>Bug Tracker</h3>
                         <div>
                             <p>
-                                (coming soon)
+                                Lorum Ipsum
                             </p>
                             <p>
-                                (coming soon)
+                                Lorum Ipsum
                             </p>
                             <p>
-                                (coming soon)
+                                Lorum Ipsum
                             </p>
                         </div>
                         <ul class="list-group">
@@ -693,13 +835,13 @@
                         <h3>Bug Tracker</h3>
                         <div>
                             <p>
-                                (coming soon)
+                                Lorum Ipsum
                             </p>
                             <p>
-                                (coming soon)
+                                Lorum Ipsum
                             </p>
                             <p>
-                                (coming soon)
+                                Lorum Ipsum
                             </p>
                         </div>
                         <ul class="list-group">
