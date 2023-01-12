@@ -1,13 +1,13 @@
 :root {
-    --ch-primary-color: rgb(145, 203, 251);
-    --ch-secondary-color: rgb(66, 148, 186);
-    --ch-highlight-color: rgb(250, 225, 120);
+    --ch-primary-color: #F8BD7F;
+    --ch-secondary-color: #467599;
+    --ch-highlight-color: #61E8E1;
     --ch-nav-toggler-color: var(--ch-highlight-color);
-    --ch-nav-toggler-glow: rgba(250, 225, 120, 0.8);
+    --ch-nav-toggler-glow: rgba(255, 149, 5, 0.8);
 
 
     --ch-dark-color: #212121;
-    --ch-light-color: #deeefb;
+    --ch-light-color: #FDE9D8;
     --ch-background-color: rgba(250, 250, 250, 0.8);
 
     --ch-title-font: 'Bebas Neue', sans-serif;
@@ -83,6 +83,56 @@ footer {
 }
 
 
+/* */
+
+h6, .h6, 
+h5, .h5,
+h4, .h4,
+h3, .h3,
+h2, .h2,
+h1, .h1 {
+
+    font-family: var(--ch-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--ch-title-color);
+}
+
+.btn-primary {
+    color: white !important;
+    background-color: var(--ch-secondary-color) !important;
+    border-color: var(--ch-secondary-color);
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1) !important;
+    border-color: var(--ch-highlight-color);
+}
+
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    filter: brightness(1.1) !important;
+    border-color: var(--ch-primary-color);
+}
+
+
+.linkstyle {
+    color: var(--ch-secondary-color);
+    text-decoration: none;
+}
+
+.linkstyle:hover {
+    color: var(--ch-secondary-color);
+    filter: saturate(2);
+    text-decoration: underline;
+}
+
+
+/* */
+
+
 
 
 .footer-main {
@@ -106,31 +156,65 @@ footer {
 }
 
 
+.footer-cta {
+    background-color: var(--ch-secondary-color);
+    width: 75%;
+    border-radius: 10px;
+
+}
+
+.footer-bg-cta {
+    background: linear-gradient(to bottom, var(--ch-background-color), var(--ch-background-color) 50%, var(--ch-dark-color) 50%, var(--ch-dark-color) 100%);
+    padding-bottom: 1.5rem;
+}
+
+
+
 /* START: Main Header Styles*/
 
 .mainHeader {
  height: 200px;
- background-image: url(/img/JillPrestonBanner_375.jpg);
+ background-image: url(/img/DevPortFolioBG_576.png);
  background-repeat: no-repeat;
- background-position: left;
+ background-position: right top;
  background-color: var(--ch-light-color);
 }
 
-.mainHeader-content {
+.mainHeader-cover {
+    min-height: 200px;
+    background-image: url(/img/cityBG_2560.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
 
+.mainHeader-cover > .mainHeader-content {
+        backdrop-filter: blur(1px)  brightness(90%) contrast(150%) saturate(150%);
+        -webkit-backdropp-filter: blur(1px)  brightness(90%) contrast(150%) saturate(150%);
+}
+
+
+@supports not (backdrop-filter: blur(3px)) {
+    .mainHeader-cover > .mainHeader-content {
+        background-color: rgba(0, 37, 46, 0.6);
+    }
 }
 
 .mainHeader-wrapper {
 
     padding-left: 1rem;
-
+    margin-top: 6rem;
 }
 
 .mainTitle {
     font-family: var(--ch-title-font);
     font-size: 2.5rem;
     line-height: 2rem;
-    color: var(--ch-dark-color);
+    color: var(--ch-light-color) !important;
+
 
 }
 
@@ -143,11 +227,11 @@ footer {
 
 .subTitle {
         font-family: var(--ch-subtitle-font);
-        font-size: .6rem;
+        font-size: .9rem !important; 
         line-height: 1rem;
         font-weight: 300;
-        color: var(--ch-dark-color);
-        letter-spacing: .09rem;
+        color: var(--ch-light-color) !important;
+        letter-spacing: 0.6rem !important;
 }
 
 
@@ -158,11 +242,64 @@ footer {
     box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
+
+section {
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section-page {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-page:nth-child(even) {
+    background-color: var(--ch-light-color);
+}
+
+
+.section-page:nth-child(odd) {
+        background-color: var(--ch-primary-color);
+}
+
+.section-page:nth-last-child(2) {
+    background-color: var(--ch-primary-color);
+}
+
+
+.section-page:last-child {
+    background-color: var(--ch-light-color);
+}
+
 /*END: main header ctyles */
 
 
+.devicons {
+    font-size: 4rem;
+}
 
+.section-cta {
+    background-color: var(--ch-dark-color);
+    color: var(--ch-light-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.2rem;
+}
 
+.cta-arrow {
+
+    color: var(--ch-highlight-color);
+    font-size: 2rem;
+}
+
+.cta-arrow:hover {
+    color: var(--ch-highlight-color);
+    filter: brightness(1.2);
+
+}
 
 
 
@@ -176,9 +313,9 @@ footer {
 @media (min-width: 576px) {
     .mainHeader {
         height: 200px;
-        background-image: url(/img/JillPrestonBanner_767.jpg);
+        background-image: url(/img/DevPortFolioBG_767.png);
         background-repeat: no-repeat;
-        background-position: left;
+        background-position: right top;
         background-color: var(--ch-light-color);
        }
        
@@ -219,14 +356,12 @@ footer {
 
 @media (min-width: 576px) {
     .mainHeader {
-        height: 200px;
-        background-image: url(/img/JillPrestonBanner_767.jpg);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-color: var(--ch-light-color);
+        height: 300px;
+        background-image: url(/img/DevPortFolioBG_992.png);
+       
        }
        
-       .mainHeader-content {}
+      
        
        .mainHeader-wrapper {
        
@@ -235,26 +370,20 @@ footer {
        }
        
        .mainTitle {
-           font-family: var(--ch-title-font);
-           font-size: 2.5rem;
-           line-height: 2rem;
-           color: var(--ch-dark-color);
+          
+           font-size: 4.5rem;
+           line-height: 3.5rem;
+         
        
        }
        
-       .mainLogo {
-       
-           height: .6em;
-       
-       }
+  
        
        
        .subTitle {
-               font-family: var(--ch-subtitle-font);
+              
                font-size: .6rem;
                line-height: 1rem;
-               font-weight: 300;
-               color: var(--ch-dark-color);
                letter-spacing: .09rem;
        }
 }
@@ -266,13 +395,11 @@ footer {
 
     .mainHeader {
         height: 300px;
-        background-image: url(/img/JillPrestonBanner_992.jpg);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-color: var(--ch-light-color);
+        background-image: url(/img/DevPortFolioBG_992.png);
+       
        }
        
-       .mainHeader-content {}
+      
        
        .mainHeader-wrapper {
        
@@ -281,27 +408,32 @@ footer {
        }
        
        .mainTitle {
-           font-family: var(--ch-title-font);
+          
            font-size: 4.5rem;
            line-height: 3.5rem;
-           color: var(--ch-dark-color);
+         
        
        }
        
-       .mainLogo {
-       
-           height: .6em;
-       
-       }
+  
        
        
        .subTitle {
-               font-family: var(--ch-subtitle-font);
-               font-size: 1.2rem;
+              
+               font-size: .6rem;
                line-height: 1rem;
                font-weight: 300;
-               color: var(--ch-dark-color);
                letter-spacing: .1rem;
+       }
+
+       .section-cta {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+       }
+
+       .cta-arrow {
+        font-size: 2.5rem;
+
        }
 }
 
@@ -310,14 +442,12 @@ footer {
 /* 576px and up */
 @media (min-width: 992px) {
     .mainHeader {
-        height: 400px;
-        background-image: url(/img/JillPrestonBanner_1200GoodCopy.jpg);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-color: var(--ch-light-color);
+        height: 300px;
+        background-image: url(/img/DevPortFolioBG_992.png);
+       
        }
        
-       .mainHeader-content {}
+      
        
        .mainHeader-wrapper {
        
@@ -326,27 +456,21 @@ footer {
        }
        
        .mainTitle {
-           font-family: var(--ch-title-font);
-           font-size: 5.5rem;
-           line-height: 4.5rem;
-           color: var(--ch-dark-color);
+          
+           font-size: 4.5rem;
+           line-height: 3.5rem;
+         
        
        }
        
-       .mainLogo {
-       
-           height: .6em;
-       
-       }
+  
        
        
        .subTitle {
-               font-family: var(--ch-subtitle-font);
-               font-size: 1.2rem;
+              
+               font-size: .6rem;
                line-height: 1rem;
-               font-weight: 300;
-               color: var(--ch-dark-color);
-               letter-spacing: .12rem;
+               letter-spacing: .09rem;
        }
 }
 
@@ -356,14 +480,12 @@ footer {
 @media (min-width: 1200px) {
 
     .mainHeader {
-        height: 500px;
-        background-image: url(/img/JillPrestonBanner_2560.png);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-color: var(--ch-light-color);
+        height: 300px;
+        background-image: url(/img/DevPortFolioBG_992.png);
+       
        }
        
-       .mainHeader-content {}
+      
        
        .mainHeader-wrapper {
        
@@ -372,44 +494,45 @@ footer {
        }
        
        .mainTitle {
-           font-family: var(--ch-title-font);
-           font-size: 6.5rem;
-           line-height: 5.5rem;
-           color: var(--ch-dark-color);
+          
+           font-size: 4.5rem;
+           line-height: 3.5rem;
+         
        
        }
        
-       .mainLogo {
-       
-           height: .6em;
-       
-       }
+  
        
        
        .subTitle {
-               font-family: var(--ch-subtitle-font);
-               font-size: 1.2rem;
+              
+               font-size: .6rem;
                line-height: 1rem;
-               font-weight: 300;
-               color: var(--ch-dark-color);
-               letter-spacing: .15rem;
+               letter-spacing: .09rem;
        }
+
+       .section-cta {
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+       }
+
+       .cta-arrow {
+        font-size: 4rem;
+       }
+
 }
 
 
 
 /* 576px and up */
 @media (min-width: 1400px) {
-
     .mainHeader {
-        height: 500px;
-        background-image: url(/img/JillPrestonBanner_2560.png);
-        background-repeat: no-repeat;
-        background-position: left;
-        background-color: var(--ch-light-color);
+        height: 300px;
+        background-image: url(/img/DevPortFolioBG_992.png);
+       
        }
        
-       .mainHeader-content {}
+      
        
        .mainHeader-wrapper {
        
@@ -418,26 +541,20 @@ footer {
        }
        
        .mainTitle {
-           font-family: var(--ch-title-font);
-           font-size: 6.5rem;
-           line-height: 5.5rem;
-           color: var(--ch-dark-color);
+          
+           font-size: 4.5rem;
+           line-height: 3.5rem;
+         
        
        }
        
-       .mainLogo {
-       
-           height: .6em;
-       
-       }
+  
        
        
        .subTitle {
-               font-family: var(--ch-subtitle-font);
-               font-size: 1.2rem;
+              
+                font-size: .6rem;
                line-height: 1rem;
-               font-weight: 300;
-               color: var(--ch-dark-color);
-               letter-spacing: .2rem;
+               letter-spacing: .09rem;
        }
 }
