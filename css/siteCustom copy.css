@@ -1,13 +1,13 @@
 :root {
-    --ch-primary-color: rgb(145, 203, 251);
-    --ch-secondary-color: rgb(66, 148, 186);
-    --ch-highlight-color: rgb(250, 225, 120);
+    --ch-primary-color: #9F9FED;
+    --ch-secondary-color: #467599;
+    --ch-highlight-color: #61E8E1;
     --ch-nav-toggler-color: var(--ch-highlight-color);
-    --ch-nav-toggler-glow: rgba(250, 225, 120, 0.8);
+    --ch-nav-toggler-glow: rgba(255, 149, 5, 0.8);
 
 
     --ch-dark-color: #212121;
-    --ch-light-color: #deeefb;
+    --ch-light-color: #D4C1EC;
     --ch-background-color: rgba(250, 250, 250, 0.8);
 
     --ch-title-font: 'Bebas Neue', sans-serif;
@@ -30,7 +30,6 @@ html,
 body {
 
     height: 100%;
-    overflow-y: auto;
 }
 
 body {
@@ -193,8 +192,8 @@ h1, .h1 {
 }
 
 .mainHeader-cover > .mainHeader-content {
-        backdrop-filter: blur(1px) hue-rotate(180deg) brightness(90%) contrast(150%) saturate(150%);
-        -webkit-backdropp-filter: blur(1px) hue-rotate(180deg) brightness(90%) contrast(150%) saturate(150%);
+        backdrop-filter: blur(1px)  brightness(90%) contrast(150%) saturate(150%);
+        -webkit-backdropp-filter: blur(1px)  brightness(90%) contrast(150%) saturate(150%);
 }
 
 
@@ -207,14 +206,15 @@ h1, .h1 {
 .mainHeader-wrapper {
 
     padding-left: 1rem;
-
+    margin-top: 6rem;
 }
 
 .mainTitle {
     font-family: var(--ch-title-font);
     font-size: 2.5rem;
     line-height: 2rem;
-    color: var(--ch-dark-color);
+    color: var(--ch-light-color) !important;
+
 
 }
 
@@ -227,11 +227,11 @@ h1, .h1 {
 
 .subTitle {
         font-family: var(--ch-subtitle-font);
-        font-size: .6rem;
+        font-size: .9rem !important; 
         line-height: 1rem;
         font-weight: 300;
-        color: var(--ch-dark-color);
-        letter-spacing: .09rem;
+        color: var(--ch-light-color) !important;
+        letter-spacing: 0.6rem !important;
 }
 
 
@@ -300,16 +300,6 @@ section {
     filter: brightness(1.2);
 
 }
-
-.line-clamp {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-
-}
-
-
 
 
 
