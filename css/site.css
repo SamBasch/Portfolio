@@ -32,6 +32,15 @@ body {
     overflow-y: auto;
 }
 
+.cimage {
+     
+
+        width:  355px;
+        height: 355px;
+        object-fit: cover;
+    
+}
+
 body {
     display: flex;
     flex-direction: column;
